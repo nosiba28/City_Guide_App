@@ -1,0 +1,11 @@
+<resources>
+    <array name="categories_array">
+        <item>Hospital</item>
+        <item>Restaurant</item>
+        <item>School</item>
+        <item>College</item>
+        <item>Sports Club</item>
+        <item>Social/Cultural Club</item>
+        <!-- Add more categories as needed -->
+    </array>
+</resources>

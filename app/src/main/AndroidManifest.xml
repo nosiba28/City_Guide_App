@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CityGuideApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".User.Banks"
+            android:exported="false" />
+        <activity
+            android:name=".User.Restaurants"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBAeQu_-qaZZI8sj1dv1wLl_bXewWYtsxE" />
+
+        <activity
+            android:name=".User.GoogleMap"
+            android:exported="false" />
+        <activity
+            android:name=".Common.LoginSignup.show_places"
+            android:exported="false" />
+        <activity
+            android:name=".Common.LoginSignup.AddPlaceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Common.LoginSignup.test11"
+            android:exported="false" />
+        <activity
+            android:name=".Common.userhome"
+            android:exported="false" />
+        <activity
+            android:name=".User.AllCategories"
+            android:exported="false" />
+        <activity
+            android:name=".HelperClasses.HomeAdapter.MostViewedAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".HelperClasses.HomeAdapter.MostViewedHelperClass"
+            android:exported="false" />
+        <activity
+            android:name=".HelperClasses.HomeAdapter.FeaturedHelperClass"
+            android:exported="false" />
+        <activity
+            android:name=".HelperClasses.HomeAdapter.FeaturedAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".HelperClasses.HomeAdapter.CategoriesHelperClass"
+            android:exported="false" />
+        <activity
+            android:name=".HelperClasses.HomeAdapter.CategoriesAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".Common.LoginSignup.SignUp3rdClass"
+            android:exported="false" />
+        <activity
+            android:name=".Common.LoginSignup.SignUp2ndClass"
+            android:exported="false" />
+        <activity
+            android:name=".Common.LoginSignup.SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Common.LoginSignup.RetailerStartUpScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Common.OnBoarding"
+            android:exported="false" />
+        <activity
+            android:name=".User.UserDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Common.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

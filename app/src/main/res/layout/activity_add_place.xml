@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Common.LoginSignup.AddPlaceActivity">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_margin="16dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_margin="16dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:layout_below="@id/spinnerCategory"
+        android:layout_margin="16dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_below="@id/editTextPhone"
+        android:layout_margin="16dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:layout_below="@id/editTextEmail"
+        android:layout_margin="16dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextMapsLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Google Maps Link"
+        android:layout_below="@id/editTextDescription"
+        android:layout_margin="16dp"
+        />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/editTextMapsLink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        />
+
+
+    <Button
+        android:id="@+id/buttonshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view places"
+        android:layout_below="@id/editTextMapsLink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        />
+
+
+</LinearLayout>
